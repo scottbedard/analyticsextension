@@ -9,7 +9,7 @@ class Plugin extends PluginBase
 {
 
     /**
-     * @var array   Require the RainLab.Blog plugin
+     * @var array   Require the RainLab.GoogleAnalytics plugin
      */
     public $require = ['RainLab.GoogleAnalytics'];
     
