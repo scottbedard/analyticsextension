@@ -9,6 +9,11 @@ class Plugin extends PluginBase
 {
 
     /**
+     * @var array   Require the RainLab.Blog plugin
+     */
+    public $require = ['RainLab.GoogleAnalytics'];
+    
+    /**
      * Returns information about this plugin.
      *
      * @return  array
@@ -17,7 +22,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Analytics Extension',
-            'description' => 'Extra widgets for RainLab.GoogleAnalytics.',
+            'description' => 'Custom widgets for Google Analytics.',
             'author'      => 'Scott Bedard',
             'icon'        => 'icon-bar-chart'
         ];
