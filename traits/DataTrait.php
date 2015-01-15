@@ -38,10 +38,10 @@ trait DataTrait {
         $obj = Analytics::instance();
         return $obj->service->data_ga->get(
             $obj->viewId,
-            $this->property('days').'daysAgo',
+            $days.'daysAgo',
             'today',
-            $this->property('metric'),
-            ['dimensions' => $this->property('dimension'), 'sort' => '-'.$this->property('metric')]
+            $metric,
+            ['dimensions' => $dimension, 'sort' => '-'.$metric]
         );
     }
 
