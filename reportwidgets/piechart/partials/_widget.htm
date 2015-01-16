@@ -21,7 +21,7 @@
         <p class="flash-message static warning"><?= e($error) ?></p>
     <?php endif ?>
 
-    <?php if (!empty($this->property('description'))): ?>
+    <?php if ($this->property('description')): ?>
         <p class="report-description"><?= $this->property('description') ?></p>
     <?php endif ?>
 </div>
