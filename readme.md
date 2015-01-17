@@ -7,7 +7,7 @@ Bar charts are great for comparing values against each other. In this example, w
 | Row                | Value      |
 | :----------------- | :--------- |
 | Widget Title       | Top Cities |
-| Dimension          | ga:cities  |
+| Dimension          | ga:city    |
 | Metric             | ga:users   |
 | Results to display | 10         |
 
