@@ -1,8 +1,8 @@
 <?php namespace Bedard\AnalyticsExtension\Traits;
 
+use ApplicationException;
 use Exception;
 use RainLab\GoogleAnalytics\Classes\Analytics;
-use System\Classes\ApplicationException;
 
 trait DataTrait {
 
