@@ -2,7 +2,7 @@
 
 use Exception;
 use RainLab\GoogleAnalytics\Classes\Analytics;
-use System\Classes\ApplicationException;
+use ApplicationException;
 
 trait DataTrait {
 
