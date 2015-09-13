@@ -27,13 +27,13 @@ trait DataTrait {
     protected function loadData()
     {
         if (!$days = $this->property('days'))
-            throw new ApplicationException('Invalid days value: '.$days);
+            throw new ApplicationException(trans('bedard.analyticsextension::lang.errors.invalid_days').$days);
 
         if (!$dimension = $this->property('dimension'))
-            throw new ApplicationException('Invalid dimension value: '.$dimension);
+            throw new ApplicationException(trans('bedard.analyticsextension::lang.errors.invalid_dimension').$dimension);
 
         if (!$metric = $this->property('metric'))
-            throw new ApplicationException('Invalid metric value: '.$metric);
+            throw new ApplicationException(trans('bedard.analyticsextension::lang.errors.invalid_metric').$metric);
 
         $obj = Analytics::instance();
         return $obj->service->data_ga->get(

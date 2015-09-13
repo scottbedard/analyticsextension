@@ -17,61 +17,61 @@ class PieChart extends ReportWidgetBase
     {
         return [
             'title' => [
-                'title'             => 'Widget title',
+                'title'             => 'bedard.analyticsextension::lang.piechart.widget_title',
                 'default'           => 'Pie Chart',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'The Widget Title is required.'
+                'validationMessage' => 'bedard.analyticsextension::lang.piechart.title_required'
             ],
             'dimension' => [
-                'title'             => 'Dimension',
+                'title'             => 'bedard.analyticsextension::lang.piechart.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'That does not appear to be a valid analytics dimension.'
+                'validationMessage' => 'bedard.analyticsextension::lang.piechart.invalid_dimension'
             ],
             'metric' => [
-                'title'             => 'Metric',
+                'title'             => 'bedard.analyticsextension::lang.piechart.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'That does not appear to be a valid analytics metric.'
+                'validationMessage' => 'bedard.analyticsextension::lang.piechart.invalid_metric'
             ],
             'reportSize' => [
-                'title'             => 'Chart radius',
+                'title'             => 'bedard.analyticsextension::lang.piechart.chart_radius',
                 'default'           => '150',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'Please specify the chart size as an integer value.'
+                'validationMessage' => 'bedard.analyticsextension::lang.piechart.chart_size_invalid'
             ],
             'center' => [
-                'title'             => 'Center the chart',
+                'title'             => 'bedard.analyticsextension::lang.piechart.center_chart',
                 'type'              => 'checkbox'
             ],
             'legendAsTable' => [
-                'title'             => 'Display legend as a table',
+                'title'             => 'bedard.analyticsextension::lang.piechart.legend_as_table',
                 'type'              => 'checkbox',
                 'default'           => 1
             ],
             'displayTotal' => [
-                'title'             => 'Display total',
+                'title'             => 'bedard.analyticsextension::lang.piechart.display_total',
                 'type'              => 'checkbox',
                 'default'           => 1
             ],
             'days' => [
-                'title'             => 'Days to display',
+                'title'             => 'bedard.analyticsextension::lang.piechart.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'number' => [
-                'title'             => 'Results to display',
+                'title'             => 'bedard.analyticsextension::lang.piechart.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'A value of 0 will display all results.'
+                'description'       => 'bedard.analyticsextension::lang.piechart.zero_displays_all'
             ],
             'description' => [
-                'title'             => 'Report description'
+                'title'             => 'bedard.analyticsextension::lang.piechart.report_description'
             ]
         ];
     }

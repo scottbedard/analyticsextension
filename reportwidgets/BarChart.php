@@ -17,52 +17,52 @@ class BarChart extends ReportWidgetBase
     {
         return [
             'title' => [
-                'title'             => 'Widget title',
+                'title'             => 'bedard.analyticsextension::lang.barchart.widget_title',
                 'default'           => 'Bar Chart',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'The Widget Title is required.'
+                'validationMessage' => 'bedard.analyticsextension::lang.barchart.widget_title_required'
             ],
             'dimension' => [
-                'title'             => 'Dimension',
+                'title'             => 'bedard.analyticsextension::lang.barchart.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'That does not appear to be a valid analytics dimension.'
+                'validationMessage' => 'bedard.analyticsextension::lang.barchart.invalid_dimension'
             ],
             'metric' => [
-                'title'             => 'Metric',
+                'title'             => 'bedard.analyticsextension::lang.barchart.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'That does not appear to be a valid analytics metric.'
+                'validationMessage' => 'bedard.analyticsextension::lang.barchart.invalid_metric'
             ],
             'reportHeight' => [
-                'title'             => 'Chart height',
+                'title'             => 'bedard.analyticsextension::lang.barchart.chart_height',
                 'default'           => '200',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'validationMessage' => 'Please specify the chart height as an integer value.'
+                'validationMessage' => 'bedard.analyticsextension::lang.barchart.invalid_chart_height'
             ],
             'legendAsTable' => [
-                'title'             => 'Display legend as a table',
+                'title'             => 'bedard.analyticsextension::lang.barchart.legend_as_table',
                 'type'              => 'checkbox',
                 'default'           => 1
             ],
             'days' => [
-                'title'             => 'Days to display',
+                'title'             => 'bedard.analyticsextension::lang.barchart.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'number' => [
-                'title'             => 'Results to display',
+                'title'             => 'bedard.analyticsextension::lang.barchart.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'A value of 0 will display all results.'
+                'description'       => 'bedard.analyticsextension::lang.barchart.zero_displays_all'
             ],
             'description' => [
-                'title'             => 'Report description'
+                'title'             => ''
             ]
         ];
     }

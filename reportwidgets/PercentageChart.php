@@ -17,46 +17,46 @@ class PercentageChart extends ReportWidgetBase
     {
         return [
             'title' => [
-                'title'             => 'Widget title',
+                'title'             => 'bedard.analyticsextension::lang.percentage.widget_title',
                 'default'           => 'Percentage Chart',
                 'type'              => 'string',
                 'validationPattern' => '^.+$',
-                'validationMessage' => 'The Widget Title is required.'
+                'validationMessage' => 'bedard.analyticsextension::lang.percentage.title_required'
             ],
             'dimension' => [
-                'title'             => 'Dimension',
+                'title'             => 'bedard.analyticsextension::lang.percentage.dimension',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'That does not appear to be a valid analytics dimension.'
+                'validationMessage' => 'bedard.analyticsextension::lang.percentage.invalid_dimension'
             ],
             'metric' => [
-                'title'             => 'Metric',
+                'title'             => 'bedard.analyticsextension::lang.percentage.metric',
                 'default'           => 'ga:visits',
                 'type'              => 'string',
                 'validationPattern' => '^ga:[a-zA-Z]+$',
-                'validationMessage' => 'That does not appear to be a valid analytics metric.'
+                'validationMessage' => 'bedard.analyticsextension::lang.percentage.invalid_metric'
             ],
             'dimensionLabel' => [
-                'title'             => 'Dimension label',
+                'title'             => 'bedard.analyticsextension::lang.percentage.dimension_label',
                 'type'              => 'string'
             ],
             'metricLabel' => [
-                'title'             => 'Metric label',
+                'title'             => 'bedard.analyticsextension::lang.percentage.metric_label',
                 'type'              => 'string',
                 'default'           => 'Visits'
             ],
             'days' => [
-                'title'             => 'Days to display',
+                'title'             => 'bedard.analyticsextension::lang.percentage.days_to_display',
                 'default'           => '30',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$'
             ],
             'number' => [
-                'title'             => 'Results to display',
+                'title'             => 'bedard.analyticsextension::lang.percentage.results_to_display',
                 'default'           => '10',
                 'type'              => 'string',
                 'validationPattern' => '^[0-9]+$',
-                'description'       => 'A value of 0 will display all results.'
+                'description'       => 'bedard.analyticsextension::lang.percentage.zero_displays_all'
             ]
         ];
     }
