@@ -22,7 +22,7 @@ class Plugin extends PluginBase
     {
         return [
             'name'        => 'Analytics Extension',
-            'description' => 'Custom widgets for Google Analytics.',
+            'description' => 'bedard.analyticsextension::lang.strings.plugin_description',
             'author'      => 'Scott Bedard',
             'icon'        => 'icon-bar-chart'
         ];
@@ -37,15 +37,15 @@ class Plugin extends PluginBase
     {
         return [
             'Bedard\AnalyticsExtension\ReportWidgets\BarChart' => [
-                'label'     => 'Google Analytics custom bar chart',
+                'label'     => 'bedard.analyticsextension::lang.strings.barchart_label',
                 'context'   => 'dashboard'
             ],
             'Bedard\AnalyticsExtension\ReportWidgets\PercentageChart' => [
-                'label'     => 'Google Analytics custom percentage chart',
+                'label'     => 'bedard.analyticsextension::lang.strings.percentage_label',
                 'context'   => 'dashboard'
             ],
             'Bedard\AnalyticsExtension\ReportWidgets\PieChart' => [
-                'label'     => 'Google Analytics custom pie chart',
+                'label'     => 'bedard.analyticsextension::lang.strings.piechart_label',
                 'context'   => 'dashboard'
             ],
         ];
