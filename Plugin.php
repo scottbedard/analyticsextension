@@ -7,7 +7,6 @@ use System\Classes\PluginBase;
  */
 class Plugin extends PluginBase
 {
-
     /**
      * @var array   Require the RainLab.GoogleAnalytics plugin
      */
@@ -24,7 +23,8 @@ class Plugin extends PluginBase
             'name'        => 'Analytics Extension',
             'description' => 'bedard.analyticsextension::lang.strings.plugin_description',
             'author'      => 'Scott Bedard',
-            'icon'        => 'icon-bar-chart'
+            'icon'        => 'icon-bar-chart',
+            'homepage'    => 'https://github.com/scottbedard/analyticsextension'
         ];
     }
 
@@ -37,18 +37,17 @@ class Plugin extends PluginBase
     {
         return [
             'Bedard\AnalyticsExtension\ReportWidgets\BarChart' => [
-                'label'     => 'bedard.analyticsextension::lang.strings.barchart_label',
-                'context'   => 'dashboard'
+                'label'   => 'bedard.analyticsextension::lang.strings.barchart_label',
+                'context' => 'dashboard'
             ],
             'Bedard\AnalyticsExtension\ReportWidgets\PercentageChart' => [
-                'label'     => 'bedard.analyticsextension::lang.strings.percentage_label',
-                'context'   => 'dashboard'
+                'label'   => 'bedard.analyticsextension::lang.strings.percentage_label',
+                'context' => 'dashboard'
             ],
             'Bedard\AnalyticsExtension\ReportWidgets\PieChart' => [
-                'label'     => 'bedard.analyticsextension::lang.strings.piechart_label',
-                'context'   => 'dashboard'
-            ],
+                'label'   => 'bedard.analyticsextension::lang.strings.piechart_label',
+                'context' => 'dashboard'
+            ]
         ];
     }
-
 }
