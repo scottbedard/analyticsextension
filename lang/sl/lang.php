@@ -1,0 +1,65 @@
+<?php
+
+return [
+    'strings' => [
+        'plugin_description' => 'Vtičnik po meri za Google Analytics.',
+        'barchart_label' => 'Google Analytics stolpični diagram po meri',
+        'percentage_label' => 'Google Analytics graf z odstotki po meri',
+        'piechart_label' => 'Google Analytics krožni diagram po meri',
+    ],
+
+    'barchart'   => [
+        'widget_title'          => 'Ime vtičnika',
+        'bar_chart'             => 'Stolpični diagram',
+        'widget_title_required' => 'Ime vtičnika je obvezno.',
+        'dimension'             => 'Velikost',
+        'invalid_dimension'     => 'Ta vrednost ni veljavna velikost za Google analitycs.',
+        'metric'                => 'Metrika',
+        'invalid_metric'        => 'Ta vrednost ni veljavna metrika za Google analytics.',
+        'chart_height'          => 'Višina diagrama',
+        'invalid_chart_height'  => 'Višina diagrama mora biti celo število.',
+        'legend_as_table'       => 'Prikaži legendo kot tabelo',
+        'days_to_display'       => 'Število dni za prikaz',
+        'results_to_display'    => 'Število zadetkov za prikaz',
+        'zero_displays_all'     => 'Število 0 bo prikazano pri vseh vrednostih.',
+        'raport_description'    => 'Opis poročila',
+    ],
+    'percentage' => [
+        'widget_title'       => 'Ime vtičnika',
+        'percentage_chart'   => 'Graf z odstotki',
+        'title_required'     => 'Ime vtičnika je obvezno.',
+        'dimension'          => 'Velikost',
+        'invalid_dimension'  => 'Ta vrednost ni veljavna velikost za Google analitycs.',
+        'metric'             => 'Metrika',
+        'invalid_metric'     => 'Ta vrednost ni veljavna metrika za Google analytics.',
+        'dimension_label'    => 'Velikost oznake',
+        'metric_label'       => 'Oznaka metrike',
+        'days_to_display'    => 'Število dni za prikaz',
+        'results_to_display' => 'Število zadetkov za prikaz',
+        'zero_displays_all'  => 'Število 0 bo prikazano pri vseh vrednostih.',
+    ],
+    'piechart' => [
+        'widget_title' => 'Ime vtičnika',
+        'pie_chart' => 'Krožni diagram',
+        'title_required' => 'Ime vtičnika je obvezno.',
+        'dimension' => 'Velikost',
+        'invalid_dimension' => 'Ta vrednost ni veljavna velikost za Google analitycs.',
+        'metric' => 'Metrika',
+        'invalid_metric' => 'Ta vrednost ni veljavna metrika za Google analytics.',
+        'chart_radius' => 'Polmer diagrama',
+        'chart_size_invalid' => 'Velikost diagrama mora biti celo število.',
+        'center_chart' => 'Centriraj diagram',
+        'legend_as_table' => 'Prikaži legendo kot tabelo',
+        'display_total' => 'Prikaži vse',
+        'days_to_display' => 'Število dni za prikaz',
+        'results_to_display' => 'Število zadetkov za prikaz',
+        'zero_displays_all' => 'Število 0 bo prikazano pri vseh vrednostih.',
+        'report_description' => 'Opis poročila',
+    ],
+    'errors' => [
+        'invalid_days' => 'Neveljavno vrednost za število dni: ',
+        'invalid_dimension' => 'Neveljavna vrednost za velikost: ',
+        'invalid_metric' => 'Neveljavna vrednost za metriko: ',
+    ]
+
+];
